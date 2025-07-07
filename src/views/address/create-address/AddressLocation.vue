@@ -47,7 +47,11 @@ async function goAddressResult() {
     });
     isLoading.value = false;
     router.push("/address-result");
-    
+    firstName.value = "";
+    lastName.value = "";
+    mobilePhone.value = "";
+    phoneNumber.value = "";
+    address.value = "";
   } catch (err) {
     isError.value = true;
     showToast(err.response.data);
